@@ -23,7 +23,12 @@ Tools that could help to search for kernel exploits are:
 
 `https://github.com/carlospolop/PEASS-ng, https://github.com/jondonas/linux-exploit-suggester-2, http://www.securitysift.com/download/linuxprivchecker.py`
 
-Enumerate useful binaries
+# Enumerate useful binaries
 ```
 which nmap aws nc ncat netcat nc.traditional wget curl ping gcc g++ make gdb base64 socat python python2 python3 python2.7 python2.6 python3.6 python3.7 perl php ruby xterm doas sudo fetch docker lxc ctr runc rkt kubectl 2>/dev/null
+```
+
+# Check if any compiler is installed.
+```
+(dpkg --list 2>/dev/null | grep "compiler" | grep -v "decompiler\|lib" 2>/dev/null || yum list installed 'gcc*' 2>/dev/null | grep gcc 2>/dev/null; which gcc g++ 2>/dev/null || locate -r "/gcc[0-9\.-]\+$" 2>/dev/null | grep -v "/doc/")
 ```
