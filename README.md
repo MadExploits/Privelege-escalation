@@ -21,4 +21,4 @@ cat /etc/os-release 2>/dev/null # universal on modern systems
 Tools that could help to search for kernel exploits are:
 </samp>
 
-`[https://github.com/carlospolop/PEASS-ng/***](https://github.com/carlospolop/PEASS-ng/)https://github.com/carlospolop/PEASS-ng/`
+`https://github.com/carlospolop/PEASS-ng/`
