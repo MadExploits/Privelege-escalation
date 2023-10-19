@@ -6,6 +6,6 @@ Localroot Privelege escalation for linux
 
 Gaining some knowledge of the OS running
 
-`(cat /proc/version || uname -a ) 2>/dev/null
+```(cat /proc/version || uname -a ) 2>/dev/null
 lsb_release -a 2>/dev/null # old, not by default on many systems
-cat /etc/os-release 2>/dev/null # universal on modern systems`
+cat /etc/os-release 2>/dev/null # universal on modern systems```
