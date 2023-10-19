@@ -54,3 +54,7 @@ for i in $(cut -d":" -f1 /etc/passwd 2>/dev/null);do id $i;done 2>/dev/null | so
 #Current user PGP keys
 gpg --list-keys 2>/dev/null
 ```
+
+<samp>
+  Refrence : https://book.hacktricks.xyz/linux-hardening/privilege-escalation
+</samp>
