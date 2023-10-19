@@ -16,3 +16,4 @@ cat /etc/os-release 2>/dev/null # universal on modern systems
 
 # Env Info
 `(env || set) 2>/dev/null`
+
