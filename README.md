@@ -32,3 +32,25 @@ which nmap aws nc ncat netcat nc.traditional wget curl ping gcc g++ make gdb bas
 ```
 (dpkg --list 2>/dev/null | grep "compiler" | grep -v "decompiler\|lib" 2>/dev/null || yum list installed 'gcc*' 2>/dev/null | grep gcc 2>/dev/null; which gcc g++ 2>/dev/null || locate -r "/gcc[0-9\.-]\+$" 2>/dev/null | grep -v "/doc/")
 ```
+# Check User
+```
+#Info about me
+id || (whoami && groups) 2>/dev/null
+#List all users
+cat /etc/passwd | cut -d: -f1
+#List users with console
+cat /etc/passwd | grep "sh$"
+#List superusers
+awk -F: '($3 == "0") {print}' /etc/passwd
+#Currently logged users
+w
+#Login history
+last | tail
+#Last log of each user
+lastlog
+
+#List all users and their groups
+for i in $(cut -d":" -f1 /etc/passwd 2>/dev/null);do id $i;done 2>/dev/null | sort
+#Current user PGP keys
+gpg --list-keys 2>/dev/null
+```
