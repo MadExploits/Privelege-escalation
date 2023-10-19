@@ -22,5 +22,7 @@ Tools that could help to search for kernel exploits are:
 </samp>
 
 `https://github.com/carlospolop/PEASS-ng/`
+
 `https://github.com/jondonas/linux-exploit-suggester-2`
+
 `http://www.securitysift.com/download/linuxprivchecker.py`
